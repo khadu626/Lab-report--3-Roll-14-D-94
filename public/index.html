@@ -1,31 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Post List</title>
-   
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>User Posts List</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
+<body>
 
-<body class="bg-gray-100 p-8 font-sans">
+    <div class="main-card">
+        <h1 class="title-badge">User Posts List</h1>
 
-    <div class="max-w-6xl mx-auto bg-white p-6 rounded-lg shadow-md">
-        <h1 class="text-lg font-semibold text-center text-green-600 bg-gray-200 border border-black-400 py-1 px-4 rounded mb-4 max-w-xs mx-auto">User Posts List</h1>
-    
-        <div class="overflow-x-auto">
-            <table class="w-full border-collapse border-2 border-gray-400">
-                
+        <div class="table-wrapper">
+            <table class="custom-table">
                 <thead>
-                    <tr class="bg-blue-500 text-white font-bold text-sm md:text-base">
-                        <th class="border-2 border-gray-400 p-3 text-center w-1/12">User ID</th>
-                        <th class="border-2 border-gray-400 p-3 text-center w-1/12">Post ID</th>
-                        <th class="border-2 border-gray-400 p-3 text-left w-4/12">Title</th>
-                        <th class="border-2 border-gray-400 p-3 text-left w-6/12">Body</th>
+                    <tr>
+                        <th style="width: 10%; text-align: center;">User ID</th>
+                        <th style="width: 10%; text-align: center;">Post ID</th>
+                        <th style="width: 35%;">Title</th>
+                        <th style="width: 45%;">Body</th>
                     </tr>
                 </thead>
-            
                 <tbody id="posts-container"></tbody>
             </table>
         </div>
@@ -33,5 +28,4 @@
 
     <script src="./first.js"></script>
 </body>
-
 </html>
